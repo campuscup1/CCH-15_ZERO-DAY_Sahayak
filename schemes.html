@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discover Schemes · SAHAYAK (सहायक)</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="app" data-page="schemes" data-title="Discover Schemes">
+<div class="shell">
+<aside id="sidebar"></aside>
+<div class="wrap">
+<header id="topbar"></header>
+<main class="main" id="main">
+<div class="page-h"><h2>Discover schemes</h2><p>Search illustrative welfare schemes and filter by category or your eligibility.</p></div>
+<div class="toolbar"><div class="search"><i data-ic="search" data-s="17"></i><label class="sr" for="q">Search schemes</label><input class="input" id="q" type="search" placeholder="Search by name, category or ministry"></div>
+<select class="input" id="status" aria-label="Eligibility status"><option value="all">All eligibility</option><option value="eligible">Eligible</option><option value="potential">Potentially eligible</option><option value="not">Not eligible</option></select>
+<select class="input" id="sort" aria-label="Sort"><option value="name">Sort: Name</option><option value="category">Sort: Category</option><option value="match">Sort: Best match</option></select></div>
+<div class="chips" id="cats" style="margin-bottom:14px"></div>
+<div style="display:flex;justify-content:space-between;gap:10px;margin-bottom:14px;flex-wrap:wrap"><span class="muted" id="count" style="font-size:13.5px"></span><span class="tag-illus"><i data-ic="info" data-s="12"></i> All scheme data is illustrative</span></div>
+<div class="card" id="noprof" hidden style="margin-bottom:16px;padding:14px 18px;font-size:14px">Create a <a href="profile.html"><b>profile</b></a> to see eligibility badges and filter by status.</div>
+<div class="grid auto" id="grid"></div>
+</main>
+</div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAHAYAK (सहायक) — Your Benefits. Your Opportunities.</title>
+<meta name="description" content="SAHAYAK helps citizens discover Indian government welfare schemes and understand their eligibility. Hackathon prototype by Team ZERRODAY.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/landing.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-page="index">
+<div class="tri"></div>
+<header class="nav-top">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="40" height="40"><span><b>SAHAYAK</b><small class="hi">सहायक</small></span></a>
+    <button class="m-toggle" id="mt" aria-label="Toggle menu" aria-expanded="false"><i data-ic="menu" data-s="20"></i></button>
+    <nav class="nav-links" id="nl" aria-label="Primary">
+      <a href="#features">Features</a><a href="#how">How it works</a><a href="#schemes">Schemes</a><a href="#team">Team</a>
+      <a class="btn btn-primary btn-sm" href="dashboard.html">Open dashboard</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow reveal"><i></i> GovTech hackathon prototype · Team ZERRODAY</span>
+      <h1 class="reveal d1">Your Benefits.<br><em>Your Opportunities.</em></h1>
+      <div class="hindi hi reveal d1">आपके लाभ। आपके अवसर।</div>
+      <p class="lead reveal d2">SAHAYAK helps you discover government welfare schemes, see exactly why you do — or don’t — qualify, and find out what to do next. Missing information is never treated as a rejection.</p>
+      <div class="cta reveal d3">
+        <a class="btn btn-primary btn-lg" id="ctaCheck" href="profile.html"><span>Check my eligibility</span><i data-ic="arrow" data-s="18"></i></a>
+        <button class="btn btn-ghost btn-lg" data-demo-go><i data-ic="zap" data-s="18"></i> Try the demo profile</button>
+      </div>
+      <div class="assure reveal d3">
+        <div><i data-ic="lock" data-s="17"></i> Profile stays in your browser</div>
+        <div><i data-ic="check-circle" data-s="17"></i> Reasons for every result</div>
+        <div><i data-ic="info" data-s="17"></i> Illustrative data</div>
+      </div>
+    </div>
+    <div class="reveal d2" aria-hidden="true">
+      <div class="preview">
+        <div class="pv-bar"><i></i><i></i><i></i><span>My Matches · illustrative preview</span></div>
+        <div class="pv-body">
+          <div class="pv-top"><div class="ring" style="--p:72"><span>72%</span></div><div><b>Welcome, Demo Citizen</b><small>Sample dashboard — not real data</small></div></div>
+          <div class="pv-row"><div class="s-ic"><i data-ic="leaf" data-s="18"></i></div><div><b>PM-KISAN Samman Nidhi</b><small>All criteria met</small></div><span class="badge eligible">Eligible</span></div>
+          <div class="pv-row"><div class="s-ic"><i data-ic="flame" data-s="18"></i></div><div><b>PM Ujjwala Yojana</b><small>BPL status to confirm</small></div><span class="badge potential">Potential</span></div>
+          <div class="pv-row"><div class="s-ic"><i data-ic="briefcase" data-s="18"></i></div><div><b>Stand-Up India</b><small>Occupation criterion not met</small></div><span class="badge not">Not eligible</span></div>
+        </div>
+        <div class="pv-foot">Illustrative preview using demo data</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="features">
+  <div class="container">
+    <div class="sec-h c reveal"><span class="kicker">Features</span><h2>Everything you need to understand your benefits</h2><p>Six connected tools that take you from “what exists?” to “what do I need to apply?”.</p></div>
+    <div class="grid g3">
+      <a class="card hover feat reveal" href="schemes.html"><div class="fi"><i data-ic="search" data-s="24"></i></div><h3>Scheme discovery</h3><p>Search and filter welfare schemes by category, keyword and your eligibility status.</p><span class="more">Explore schemes <i data-ic="arrow" data-s="15"></i></span></a>
+      <a class="card hover feat reveal d1" href="matches.html"><div class="fi"><i data-ic="check-circle" data-s="24"></i></div><h3>Eligibility matching</h3><p>See Eligible, Potentially eligible and Not eligible schemes — each with clear reasons.</p><span class="more">View matches <i data-ic="arrow" data-s="15"></i></span></a>
+      <a class="card hover feat reveal d2" href="gap-analyzer.html"><div class="fi"><i data-ic="target" data-s="24"></i></div><h3>Gap analyzer</h3><p>Find which missing details would unlock more schemes, and where you narrowly miss out.</p><span class="more">Find gaps <i data-ic="arrow" data-s="15"></i></span></a>
+      <a class="card hover feat reveal" href="simulator.html"><div class="fi"><i data-ic="sliders" data-s="24"></i></div><h3>What-if simulator</h3><p>Try different ages, incomes or situations without changing your saved profile.</p><span class="more">Run a what-if <i data-ic="arrow" data-s="15"></i></span></a>
+      <a class="card hover feat reveal d1" href="documents.html"><div class="fi"><i data-ic="file" data-s="24"></i></div><h3>Document checklist</h3><p>One combined checklist of what to keep ready, with progress that you can tick off.</p><span class="more">Open checklist <i data-ic="arrow" data-s="15"></i></span></a>
+      <a class="card hover feat reveal d2" href="compare.html"><div class="fi"><i data-ic="columns" data-s="24"></i></div><h3>Scheme comparison</h3><p>Compare up to three schemes side by side — benefits, criteria, documents and steps.</p><span class="more">Compare schemes <i data-ic="arrow" data-s="15"></i></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="container">
+    <div class="sec-h c reveal"><span class="kicker">How it works</span><h2>Four simple steps</h2><p>No sign-up. Your details stay in this browser.</p></div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">1</div><h3>Tell us about you</h3><p>Fill in what you know. Anything you are unsure about can stay blank.</p></div>
+      <div class="step reveal d1"><div class="num">2</div><h3>See your matches</h3><p>Schemes are grouped by eligibility with a reason behind each result.</p></div>
+      <div class="step reveal d2"><div class="num">3</div><h3>Close the gaps</h3><p>Learn which details to add and test what-if changes safely.</p></div>
+      <div class="step reveal d3"><div class="num">4</div><h3>Get ready to apply</h3><p>Use the checklist and comparison to prepare your documents.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="container principle">
+    <div class="reveal">
+      <span class="kicker">Fair by design</span>
+      <h2 style="font-size:clamp(26px,3vw,36px);color:var(--navy)">Missing information is never a rejection</h2>
+      <p class="muted" style="margin-top:14px;font-size:16.5px">Many citizens don’t have every detail at hand. SAHAYAK separates “you don’t qualify” from “we don’t know yet”, so nobody is told no because of a blank field.</p>
+      <div style="margin-top:22px"><a class="btn btn-primary" href="profile.html">Start with what you know <i data-ic="arrow" data-s="16"></i></a></div>
+    </div>
+    <div class="states reveal d1">
+      <div class="state"><span class="badge eligible"><i data-ic="check-circle" data-s="14"></i> Eligible</span><div><b>Every criterion is met</b><span>Your answers satisfy all listed conditions.</span></div></div>
+      <div class="state"><span class="badge potential"><i data-ic="help" data-s="14"></i> Potentially eligible</span><div><b>Nothing fails — something is unknown</b><span>We tell you exactly which detail would confirm it.</span></div></div>
+      <div class="state"><span class="badge not"><i data-ic="x-circle" data-s="14"></i> Not eligible</span><div><b>A criterion is clearly not met</b><span>You see which one, and can explore what-if changes.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="schemes">
+  <div class="container">
+    <div class="sec-h reveal" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;max-width:none">
+      <div style="max-width:640px"><span class="kicker">Featured schemes</span><h2 style="font-size:clamp(28px,3.4vw,40px);color:var(--navy)">A glimpse of what you can explore</h2><p class="muted" style="margin-top:12px;font-size:16.5px">Scheme details here are <b>illustrative</b> and simplified for the demo.</p></div>
+      <a class="btn btn-ghost" href="schemes.html">Browse all schemes <i data-ic="arrow" data-s="16"></i></a>
+    </div>
+    <div class="grid auto" id="featured"></div>
+  </div>
+</section>
+
+<section class="sec team" id="team">
+  <div class="container">
+    <div class="sec-h c reveal"><span class="team-name">ZERRODAY</span><h2>Meet the Team Behind SAHAYAK</h2><p>Four builders working to make welfare schemes easier to understand.</p></div>
+    <div class="members">
+      <article class="member reveal"><div class="mi">ST</div><h3>Samarth Talwar</h3><small>TEAM ZERRODAY</small></article>
+      <article class="member reveal d1"><div class="mi">YY</div><h3>Yash Yadav</h3><small>TEAM ZERRODAY</small></article>
+      <article class="member reveal d2"><div class="mi">AG</div><h3>Aditya Gaikwad</h3><small>TEAM ZERRODAY</small></article>
+      <article class="member reveal d3"><div class="mi">ZS</div><h3>Zeenath Shaikh</h3><small>TEAM ZERRODAY</small></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding:44px 0">
+  <div class="container"><div class="disclaim reveal"><i data-ic="alert" data-s="22"></i><div><b>Prototype notice.</b> SAHAYAK is a hackathon prototype. Scheme details, benefits and eligibility limits shown are illustrative and simplified — they are not official. Please verify with the relevant ministry or department before applying.</div></div></div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <div><a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="40" height="40"><span><b>SAHAYAK</b><small class="hi" style="opacity:.7">सहायक</small></span></a><p style="max-width:300px">Your Benefits. Your Opportunities.</p></div>
+    <div><h4>Explore</h4><a href="schemes.html">Discover schemes</a><a href="matches.html">My matches</a><a href="compare.html">Compare schemes</a></div>
+    <div><h4>Tools</h4><a href="gap-analyzer.html">Gap analyzer</a><a href="simulator.html">What-if simulator</a><a href="documents.html">Document checklist</a></div>
+    <div><h4>Account</h4><a href="dashboard.html">Dashboard</a><a href="profile.html">My profile</a></div>
+  </div>
+  <div class="foot-bottom">© Team ZERRODAY · Hackathon prototype · Illustrative data only</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

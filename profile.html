@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Profile · SAHAYAK (सहायक)</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="app" data-page="profile" data-title="My Profile">
+<div class="shell">
+<aside id="sidebar"></aside>
+<div class="wrap">
+<header id="topbar"></header>
+<main class="main" id="main">
+<div class="page-h"><h2>Your profile</h2><p>Share what you know — leave anything unsure blank. Blank answers are never counted as a failed eligibility check.</p></div>
+<div class="sim" style="grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)">
+<form id="pform" novalidate class="grid" style="gap:18px">
+<div id="pfields" class="grid" style="gap:18px"></div>
+<div class="card" style="display:flex;gap:10px;flex-wrap:wrap;position:sticky;bottom:12px;z-index:5;box-shadow:var(--sh-2)">
+<button class="btn btn-primary" type="submit">Save profile</button>
+<button class="btn btn-ghost" type="button" id="demoBtn">Fill demo values</button>
+<button class="btn btn-ghost" type="button" id="resetBtn">Undo changes</button>
+<button class="btn btn-danger" type="button" id="clearBtn" style="margin-left:auto">Clear saved profile</button>
+</div>
+<div class="card" id="afterSave" hidden style="border-color:#bfe2ba;background:#F6FBF5"><b>Profile saved.</b> <span class="muted">What would you like to do next?</span>
+<div class="acts"><a class="btn btn-primary btn-sm" href="matches.html">View my matches</a><a class="btn btn-ghost btn-sm" href="dashboard.html">Go to dashboard</a><a class="btn btn-ghost btn-sm" href="gap-analyzer.html">Find gaps</a></div></div>
+</form>
+<aside class="card sticky"><div class="card-h"><h3>Live preview</h3><span class="tag-illus">Illustrative</span></div>
+<div style="display:flex;gap:14px;align-items:center;margin-bottom:18px"><div class="ring" id="pring" style="--p:0"><span>0%</span></div><div><b>Profile completeness</b><div class="muted" style="font-size:13px" id="pdone"></div></div></div>
+<div class="delta"><div><b id="lv-e">0</b><small>Eligible</small></div><div><b id="lv-p">0</b><small>Potential</small></div><div><b id="lv-n">0</b><small>Not eligible</small></div></div>
+<p class="muted" style="font-size:13px">Updates as you type. Unanswered details keep schemes “potential” — they never count against you. Your data is saved only in this browser.</p></aside>
+</div>
+</main>
+</div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>
