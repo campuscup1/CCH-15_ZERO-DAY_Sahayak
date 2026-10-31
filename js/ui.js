@@ -168,7 +168,7 @@
         <div><h4>About</h4><p>${esc(s.summary)}</p></div>
         <div><h4>Benefit (illustrative)</h4><p>${esc(s.benefit)}</p><p class="muted" style="font-size:13px;margin-top:6px">${esc(s.type)} · ${esc(s.ministry)}</p></div>
         <div><h4>${ev?'Your eligibility check':'Eligibility criteria'}</h4>${ev?ruleList(ev.results):plainRules(s)}${ev?'':'<p class="muted" style="font-size:13px;margin-top:10px">Create a profile to see how you match each criterion.</p>'}</div>
-        <div><h4>Documents usually needed</h4><div class="chips">${s.docs.map(d=>`<span class="pill">${esc(SAH.DOCS[d].name)}</span>`).join('')}</div></div>
+        <div><h4>Documents usually needed</h4><div class="chips">${s.docs.map(d=>`<span class="pill">${esc(docName(d))}</span>`).join('')}</div></div>
         <div><h4>How to apply (general guidance)</h4><ol style="padding-left:20px;display:flex;flex-direction:column;gap:6px">${s.apply.map(a=>`<li>${esc(a)}</li>`).join('')}</ol></div>
         <div class="disclaim" style="background:#FFF2E0;border:1px solid #f6d9ab;border-radius:12px;padding:12px 14px;font-size:13px;color:#6a3a00">Illustrative information for a hackathon prototype — not official. Verify the latest criteria and the official application process with the concerned ministry or department before applying.</div>
         <div class="acts" style="margin-top:0"><button class="btn btn-primary" id="mCmp">${icon('columns',16)} <span>${inCmp?'Remove from comparison':'Add to comparison'}</span></button><a class="btn btn-ghost" href="${p?'matches.html':'profile.html'}">${p?'View my matches':'Create profile'}</a></div>
@@ -198,5 +198,18 @@
     });
   }
 
-  SAH.ui={hydrateIcons,icon,esc,$,$$,initials,toast,modal,closeModal,badge,ruleList,plainRules,toggleCompare,schemeModal,emptyProfile,bindDemo,ring,updateCompareBadge,buildShell,transitions,reveal};
+  function docName(d){
+    if(!d) return '';
+    const e=SAH.DOCS[d];
+    if(e) return e.name;
+    // Backend returns full document names (e.g. "Aadhaar Card"); display them directly
+    return String(d);
+  }
+  function docDesc(d){
+    if(!d) return '';
+    const e=SAH.DOCS[d];
+    return e?e.desc:'';
+  }
+
+  SAH.ui={hydrateIcons,icon,esc,$,$$,initials,toast,modal,closeModal,badge,ruleList,plainRules,toggleCompare,schemeModal,emptyProfile,bindDemo,ring,updateCompareBadge,buildShell,transitions,reveal,docName,docDesc};
 })();

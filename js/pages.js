@@ -1,6 +1,6 @@
 /* SAHAYAK — page controllers */
 (function(){
-  const {icon,esc,$,$$,toast,badge,ruleList,ring,schemeModal,toggleCompare,emptyProfile,bindDemo}=SAH.ui;
+  const {icon,esc,$,$$,toast,badge,ruleList,ring,schemeModal,toggleCompare,emptyProfile,bindDemo,docName}=SAH.ui;
   const E=SAH.engine, S=SAH.store;
   const rank={eligible:2,potential:1,not:0};
   const fl=k=>SAH.FIELD_MAP[k].label;
@@ -394,9 +394,9 @@
       sel.innerHTML='<option value="all">All schemes in view</option>'+sc.map(s=>`<option value="${s.id}" ${s.id===st.scheme?'selected':''}>${esc(s.name)}</option>`).join('');
       const use=st.scheme==='all'?sc:sc.filter(s=>s.id===st.scheme);
       const map={};use.forEach(s=>s.docs.forEach(d=>(map[d]=map[d]||[]).push(s)));
-      const ids=Object.keys(map).sort((a,b)=>map[b].length-map[a].length||SAH.DOCS[a].name.localeCompare(SAH.DOCS[b].name));
+      const ids=Object.keys(map).sort((a,b)=>map[b].length-map[a].length||docName(a).localeCompare(docName(b)));
       const done=S.getDocs();
-      $('#dlist').innerHTML=ids.length?ids.map(d=>`<label class="doc ${done[d]?'done':''}"><input type="checkbox" data-d="${d}" ${done[d]?'checked':''}><span class="cb">${icon('check',14)}</span><div style="flex:1"><div class="dn">${esc(SAH.DOCS[d].name)}</div><div class="dd">${esc(SAH.DOCS[d].desc)}</div><div class="used">${map[d].map(s=>`<span class="pill">${esc(s.name)}</span>`).join('')}</div></div></label>`).join(''):`<div class="card empty"><div class="e-ic">${icon('file',26)}</div><h3>No documents to list</h3><p>No schemes in this view yet. Try “All schemes”.</p></div>`;
+      $('#dlist').innerHTML=ids.length?ids.map(d=>`<label class="doc ${done[d]?'done':''}"><input type="checkbox" data-d="${d}" ${done[d]?'checked':''}><span class="cb">${icon('check',14)}</span><div style="flex:1"><div class="dn">${esc(docName(d))}</div><div class="dd">${esc(docDesc(d))}</div><div class="used">${map[d].map(s=>`<span class="pill">${esc(s.name)}</span>`).join('')}</div></div></label>`).join(''):`<div class="card empty"><div class="e-ic">${icon('file',26)}</div><h3>No documents to list</h3><p>No schemes in this view yet. Try “All schemes”.</p></div>`;
       progress(ids);
     }
     function progress(ids){
@@ -439,7 +439,7 @@
         ['Type of benefit',s=>esc(s.type),s=>s.type],
         ['What you get (illustrative)',s=>esc(s.benefit),s=>s.benefit],
         ['Key eligibility',s=>`<ul>${s.rules.map(r=>`<li>${esc(r.label)}</li>`).join('')}</ul>`,s=>s.rules.map(r=>r.label).join('|')],
-        ['Documents',s=>`<ul>${s.docs.map(d=>`<li>${esc(SAH.DOCS[d].name)}</li>`).join('')}</ul>`,s=>s.docs.join('|')],
+        ['Documents',s=>`<ul>${s.docs.map(d=>`<li>${esc(docName(d))}</li>`).join('')}</ul>`,s=>s.docs.join('|')],
         ['How to apply',s=>`<ul>${s.apply.map(a=>`<li>${esc(a)}</li>`).join('')}</ul>`,s=>s.apply.join('|')]
       ];
       if(p)rows.unshift(['Your status',s=>badge(ev[s.id].status)+`<div class="muted" style="font-size:12.5px;margin-top:8px">${ev[s.id].passed.length} of ${ev[s.id].results.length} criteria met</div>`,s=>ev[s.id].status]);
@@ -461,11 +461,13 @@
   };
 
   /* ---------- boot ---------- */
-  document.addEventListener('DOMContentLoaded',()=>{
+  document.addEventListener('DOMContentLoaded',async()=>{
     SAH.ui.buildShell();
     SAH.ui.hydrateIcons();
     SAH.ui.transitions();
     SAH.ui.reveal();
+    // Load schemes from backend so SCHEME_MAP is populated before any page renders
+    try { await SAH.api.loadSchemes(); } catch(e) { console.warn('Could not load schemes from backend:', e.message); }
     const fn=pages[document.body.dataset.page];
     if(fn)Promise.resolve(fn()).catch(err=>{console.error(err);toast('Something went wrong loading this page.','warn')});
   });
