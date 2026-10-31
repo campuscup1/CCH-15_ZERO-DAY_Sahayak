@@ -13,10 +13,15 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
+<<<<<<< HEAD
 # Frontend CORS configuration (vanilla JS on python http.server)
 origins = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",
+=======
+# React + Vite frontend CORS configuration
+origins = [
+>>>>>>> 1f02b5b0b2fe521a2484463dc066535495ea91b2
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "http://localhost:3000",
