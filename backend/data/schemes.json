@@ -1,0 +1,323 @@
+[
+  {
+    "scheme_id": "SCH001",
+    "scheme_name": "Post Matric Scholarship to OBC Students (Maharashtra)",
+    "description": "Financial assistance for Other Backward Class (OBC) students studying in post-matriculation courses in recognized institutions in Maharashtra.",
+    "category": "Education",
+    "government_level": "State",
+    "state": "Maharashtra",
+    "benefits": "Maintenance allowance ranging from ₹400 to ₹1200 per month and full/partial tuition fee reimbursement.",
+    "eligibility_rules": {
+      "min_age": 15,
+      "max_age": 35,
+      "max_income": 150000,
+      "domicile": "Maharashtra",
+      "category": "OBC",
+      "education_level": ["11th", "12th", "Undergraduate", "Postgraduate", "Diploma"]
+    },
+    "required_documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Domicile Certificate",
+      "Caste Certificate",
+      "Previous Year Marksheet",
+      "Fee Receipt"
+    ],
+    "application_process": "Apply online through the Maharashtra Direct Benefit Transfer (MahaDBT) portal.",
+    "official_website": "https://mahadbt.maharashtra.gov.in/",
+    "source_url": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?MenuId=101",
+    "last_verified_date": "2026-01-15"
+  },
+  {
+    "scheme_id": "SCH002",
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "description": "Central sector scheme providing income support of ₹6,000 per year in three equal installments to all landholding farmer families across India.",
+    "category": "Agriculture",
+    "government_level": "Central",
+    "state": "All",
+    "benefits": "Financial assistance of ₹6,000 per year payable in three 4-monthly installments of ₹2,000 each directly to bank accounts.",
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 100,
+      "max_income": null,
+      "domicile": "All",
+      "occupation": ["Farmer", "Agriculture"],
+      "landholding_required": true
+    },
+    "required_documents": [
+      "Aadhaar Card",
+      "Land Ownership Documents (7/12 & 8A extracts)",
+      "Bank Passbook",
+      "Mobile Number"
+    ],
+    "application_process": "Register via the PM-KISAN portal or through local Common Service Centers (CSCs) and state agriculture department.",
+    "official_website": "https://pmkisan.gov.in/",
+    "source_url": "https://pmkisan.gov.in/AboutUs.aspx",
+    "last_verified_date": "2026-01-10"
+  },
+  {
+    "scheme_id": "SCH003",
+    "scheme_name": "Mahatma Jyotirao Phule Jan Arogya Yojana (MJPJAY)",
+    "description": "Health insurance scheme by Government of Maharashtra providing cashless medical treatment for identified diseases to eligible families.",
+    "category": "Healthcare",
+    "government_level": "State",
+    "state": "Maharashtra",
+    "benefits": "Cashless health insurance coverage up to ₹1.5 Lakhs per family per year (enhanced to ₹5 Lakhs for eligible categories).",
+    "eligibility_rules": {
+      "min_age": 0,
+      "max_age": 100,
+      "max_income": 800000,
+      "domicile": "Maharashtra",
+      "category": ["Yellow Ration Card", "Orange Ration Card", "Antyodaya Anna Yojana", "Annapurna"]
+    },
+    "required_documents": [
+      "Yellow or Orange Ration Card",
+      "Aadhaar Card",
+      "Domicile Certificate"
+    ],
+    "application_process": "Enroll at network hospitals with valid ration card and Aadhaar card; no prior registration required.",
+    "official_website": "https://www.jeevandayee.gov.in/",
+    "source_url": "https://www.jeevandayee.gov.in/MJPJAY/Geme/SchemeFeatures",
+    "last_verified_date": "2026-01-20"
+  },
+  {
+    "scheme_id": "SCH004",
+    "scheme_name": "Majhi Ladki Bahin Yojana (Maharashtra)",
+    "description": "Financial assistance scheme by Government of Maharashtra for women aged 21 to 65 years to promote financial independence.",
+    "category": "Women and Child Welfare",
+    "government_level": "State",
+    "state": "Maharashtra",
+    "benefits": "Monthly financial assistance of ₹1,500 transferred directly to beneficiary bank accounts.",
+    "eligibility_rules": {
+      "min_age": 21,
+      "max_age": 65,
+      "max_income": 250000,
+      "domicile": "Maharashtra",
+      "gender": "Female"
+    },
+    "required_documents": [
+      "Aadhaar Card",
+      "Maharashtra Domicile / Birth Certificate",
+      "Income Certificate",
+      "Bank Account Passbook",
+      "Signed Declaration Form"
+    ],
+    "application_process": "Apply through Nari Shakti Doot app or online portal designated by Women and Child Development Department, Maharashtra.",
+    "official_website": "https://ladkibahin.maharashtra.gov.in/",
+    "source_url": "https://ladkibahin.maharashtra.gov.in/",
+    "last_verified_date": "2026-01-18"
+  },
+  {
+    "scheme_id": "SCH005",
+    "scheme_name": "Pradhan Mantri Awas Yojana - Urban (PMAY-U)",
+    "description": "Central housing scheme to provide affordable housing to urban poor including Economically Weaker Sections (EWS) and Lower Income Groups (LIG).",
+    "category": "Housing and Financial Assistance",
+    "government_level": "Central",
+    "state": "All",
+    "benefits": "Central assistance up to ₹1.5 Lakhs or interest subsidy on housing loans for construction/purchase of a house.",
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 70,
+      "max_income": 600000,
+      "domicile": "All",
+      "residential_status": "Urban",
+      "pucca_house_owned": false
+    },
+    "required_documents": [
+      "Aadhaar Card",
+      "Income Certificate / Salary Slip",
+      "Affidavit stating no pucca house owned",
+      "Bank Account Details"
+    ],
+    "application_process": "Apply online via PMAY-U official portal or through Common Service Centers (CSCs).",
+    "official_website": "https://pmaymis.gov.in/",
+    "source_url": "https://pmaymis.gov.in/",
+    "last_verified_date": "2026-01-05"
+  },
+  {
+    "scheme_id": "SCH006",
+    "scheme_name": "Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Scholarship Scheme",
+    "description": "Educational fee reimbursement scheme for economically weaker students in professional and higher education in Maharashtra.",
+    "category": "Education",
+    "government_level": "State",
+    "state": "Maharashtra",
+    "benefits": "50% tuition fee concession and 50% exam fee reimbursement for professional courses.",
+    "eligibility_rules": {
+      "min_age": 17,
+      "max_age": 30,
+      "max_income": 800000,
+      "domicile": "Maharashtra",
+      "category": ["OPEN", "SEBC", "EWS"],
+      "education_level": ["Undergraduate", "Postgraduate", "Professional Course"]
+    },
+    "required_documents": [
+      "Income Certificate",
+      "Domicile Certificate",
+      "Admission Receipt",
+      "Previous Year Marksheet",
+      "Aadhaar Card"
+    ],
+    "application_process": "Apply via MahaDBT portal during the academic admission window.",
+    "official_website": "https://mahadbt.maharashtra.gov.in/",
+    "source_url": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?MenuId=102",
+    "last_verified_date": "2026-01-15"
+  },
+  {
+    "scheme_id": "SCH007",
+    "scheme_name": "National Apprenticeship Promotion Scheme (NAPS)",
+    "description": "Central scheme to promote apprenticeship training and incentivize employers to engage apprentices across industries.",
+    "category": "Employment",
+    "government_level": "Central",
+    "state": "All",
+    "benefits": "Stipend support of up to ₹1,500 per month per apprentice shared with employers.",
+    "eligibility_rules": {
+      "min_age": 14,
+      "max_age": 35,
+      "max_income": null,
+      "domicile": "All",
+      "education_level": ["8th", "10th", "12th", "ITI", "Diploma", "Undergraduate"]
+    },
+    "required_documents": [
+      "Aadhaar Card",
+      "Bank Details",
+      "Educational Certificates",
+      "Passport Size Photograph"
+    ],
+    "application_process": "Register on the National Apprenticeship Training (NAPS) portal.",
+    "official_website": "https://www.apprenticeshipindia.gov.in/",
+    "source_url": "https://www.apprenticeshipindia.gov.in/",
+    "last_verified_date": "2026-01-12"
+  },
+  {
+    "scheme_id": "SCH008",
+    "scheme_name": "Gopinath Munde Shetkari Apghat Vima Yojana",
+    "description": "Accidental insurance scheme for farmers and farm workers in Maharashtra providing compensation in case of accidental death or permanent disability.",
+    "category": "Agriculture",
+    "government_level": "State",
+    "state": "Maharashtra",
+    "benefits": "Compensation of up to ₹2,00,000 in case of accidental death or permanent disablement.",
+    "eligibility_rules": {
+      "min_age": 10,
+      "max_age": 75,
+      "max_income": null,
+      "domicile": "Maharashtra",
+      "occupation": ["Farmer", "Agricultural Laborer"]
+    },
+    "required_documents": [
+      "First Information Report (FIR)",
+      "Police Inquest Panchnama",
+      "Post Mortem Report",
+      "Death Certificate",
+      "7/12 Land Extract or Certificate from Tahsildar"
+    ],
+    "application_process": "Application submitted through District Agriculture Officer within 90 days of accident.",
+    "official_website": "https://agri.maharashtra.gov.in/",
+    "source_url": "https://agri.maharashtra.gov.in/",
+    "last_verified_date": "2026-01-14"
+  },
+  {
+    "scheme_id": "SCH009",
+    "scheme_name": "Ayushman Bharat PM-JAY",
+    "description": "World's largest health insurance scheme fully financed by government, providing coverage of ₹5 Lakhs per family per year for secondary and tertiary care hospitalization.",
+    "category": "Healthcare",
+    "government_level": "Central",
+    "state": "All",
+    "benefits": "Cashless and paperless hospitalization benefit up to ₹5,00,000 per family per year across empaneled hospitals.",
+    "eligibility_rules": {
+      "min_age": 0,
+      "max_age": 100,
+      "max_income": 300000,
+      "domicile": "All",
+      "category": ["SECC Deprived", "RSBY Beneficiary"]
+    },
+    "required_documents": [
+      "Aadhaar Card",
+      "Ration Card",
+      "Mobile Number linked with Aadhaar"
+    ],
+    "application_process": "Check eligibility online at PM-JAY portal or visit Ayushman Arogya Mandir / Common Service Center.",
+    "official_website": "https://pmjay.gov.in/",
+    "source_url": "https://pmjay.gov.in/about/pmjay",
+    "last_verified_date": "2026-01-08"
+  },
+  {
+    "scheme_id": "SCH010",
+    "scheme_name": "Savitribai Phule Scholarship for Secondary School Girls (Maharashtra)",
+    "description": "Scholarship scheme by Maharashtra Government to encourage girls from backward classes to complete secondary education.",
+    "category": "Women and Child Welfare",
+    "government_level": "State",
+    "state": "Maharashtra",
+    "benefits": "Annual financial incentive of ₹1,000 (₹100 per month for 10 months) for girls in 8th to 10th standard.",
+    "eligibility_rules": {
+      "min_age": 12,
+      "max_age": 16,
+      "max_income": 250000,
+      "domicile": "Maharashtra",
+      "gender": "Female",
+      "education_level": ["8th", "9th", "10th"],
+      "category": ["SC", "ST", "DTVJ", "SBC", "OBC"]
+    },
+    "required_documents": [
+      "School Enrollment Certificate",
+      "Caste Certificate",
+      "Bank Passbook",
+      "Aadhaar Card"
+    ],
+    "application_process": "Applied through school headmaster on the Maharashtra Social Justice portal.",
+    "official_website": "https://sjsa.maharashtra.gov.in/",
+    "source_url": "https://sjsa.maharashtra.gov.in/en/schemes",
+    "last_verified_date": "2026-01-12"
+  },
+  {
+    "scheme_id": "SCH011",
+    "scheme_name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "description": "Financial scheme providing loans up to ₹10 Lakhs to non-corporate, non-farm small/micro enterprises.",
+    "category": "Housing and Financial Assistance",
+    "government_level": "Central",
+    "state": "All",
+    "benefits": "Collateral-free loans up to ₹10,00,000 under Shishu, Kishore, and Tarun categories.",
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 65,
+      "max_income": null,
+      "domicile": "All",
+      "occupation": ["Business Owner", "Self-Employed", "Entrepreneur"]
+    },
+    "required_documents": [
+      "Identity Proof (Aadhaar/PAN/Voter ID)",
+      "Business Proof / Registration",
+      "Bank Statement",
+      "Passport Size Photos"
+    ],
+    "application_process": "Apply directly through any participating commercial bank, RRB, Small Finance Bank, or online via Udyamimitra portal.",
+    "official_website": "https://www.mudra.org.in/",
+    "source_url": "https://www.mudra.org.in/",
+    "last_verified_date": "2026-01-02"
+  },
+  {
+    "scheme_id": "SCH012",
+    "scheme_name": "Dr. Panjabrao Deshmukh Vastigruh Nirvah Bhatta Yojana",
+    "description": "Hostel maintenance allowance scheme for children of registered construction workers and economically weaker farmers in Maharashtra.",
+    "category": "Education",
+    "government_level": "State",
+    "state": "Maharashtra",
+    "benefits": "Maintenance allowance between ₹30,000 to ₹60,000 per year for students studying away from home in professional/higher education.",
+    "eligibility_rules": {
+      "min_age": 17,
+      "max_age": 30,
+      "max_income": 800000,
+      "domicile": "Maharashtra",
+      "education_level": ["Undergraduate", "Postgraduate", "Diploma", "Professional Course"]
+    },
+    "required_documents": [
+      "Income Certificate",
+      "Domicile Certificate",
+      "Hostel Fee Receipt / Admission Proof",
+      "Bonafide Certificate"
+    ],
+    "application_process": "Apply online through MahaDBT portal.",
+    "official_website": "https://mahadbt.maharashtra.gov.in/",
+    "source_url": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?MenuId=103",
+    "last_verified_date": "2026-01-15"
+  }
+]
