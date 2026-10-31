@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# saha
-=======
 # 🇮🇳 SAHAYAK (सहायक)
 ### Your Benefits. Your Opportunities.
 
@@ -260,4 +257,3 @@ SAHAYAK is an informational prototype developed to simplify government scheme di
   Your Benefits. Your Opportunities.<br/><br/>
   <strong>TEAM ZERRODAY 🇮🇳</strong>
 </p>
->>>>>>> e21332db5f813bf32ecaac8f2a831b59651c9c46
